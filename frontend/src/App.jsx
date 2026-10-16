@@ -239,7 +239,7 @@ const App = () => {
         <div className="max-w-4xl mx-auto px-4 h-16 flex items-center justify-between relative">
 
           <h1 className="font-display font-bold text-xl tracking-tight text-transparent bg-clip-text absolute left-14 -translate-x-1/2" style={{ backgroundImage: 'linear-gradient(to right, #FFFFFF, #A1A1AA)' }}>
-            Jodo.AI
+            pippo
           </h1>
 
           <div className="flex items-center gap-2 flex-1 justify-end">
@@ -279,7 +279,7 @@ const App = () => {
                 backgroundSize: '200% auto',
                 animation: 'gradientShift 4s ease infinite'
               }}>
-              Jodo.AI
+              pippo
             </h2>
             <p className="text-lg mb-12" style={{ color: '#A1A1AA' }}>Your intelligent companion</p>
 
@@ -444,7 +444,7 @@ const App = () => {
             </div>
           </div>
           <div className="text-center mt-3 lg:text-sm text-[10px] font-medium" style={{ color: '#52525B' }}>
-            Jodo.AI can make mistakes. Consider verifying important information.
+            pippo can make mistakes. Consider verifying important information.
           </div>
         </div>
       </div>
