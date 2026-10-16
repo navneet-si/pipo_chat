@@ -1,6 +1,6 @@
-# Jodo.AI 🤖
+# Pippo.AI 🤖
 
-Jodo.AI is an advanced, responsive AI-powered personal assistant that combines **Retrieval-Augmented Generation (RAG)** with dynamic **Tool Calling** (real-time web search) and streams answers using **Server-Sent Events (SSE)**.
+Pippo.AI is an advanced, responsive AI-powered personal assistant that combines **Retrieval-Augmented Generation (RAG)** with dynamic **Tool Calling** (real-time web search) and streams answers using **Server-Sent Events (SSE)**.
 
 It is structured as a monorepo containing a modern React frontend and a robust Node.js backend.
 
@@ -191,7 +191,7 @@ When the backend starts for the first time, it automatically:
 - Logs: `"BM25 index initialized with X chunks"`
 
 #### 1.3 Ingest PDF Documents (Optional but Recommended)
-If you want to add documents to Jodo.AI's knowledge base:
+If you want to add documents to pippo.AI's knowledge base:
 
 1. Place your PDF file in the `toolcalling` directory
 2. Update `ready_pdfs.js` to include your PDF filename
@@ -234,14 +234,14 @@ The frontend needs to know where the backend is running.
 Open `frontend/src/App.jsx` and modify line 28:
 ```javascript
 // Change from:
-const response = await fetch('https://jodo-ai.onrender.com/chat', {
+const response = await fetch('https://pippo-ai.onrender.com/chat', {
 
 // To:
 const response = await fetch('http://localhost:3001/chat', {
 ```
 
 **For Production:**
-Leave it pointing to your production server URL (e.g., `https://jodo-ai.onrender.com/chat`)
+Leave it pointing to your production server URL (e.g., `https://pippo-ai.onrender.com/chat`)
 
 #### 2.3 Start the Development Server
 ```bash
@@ -254,7 +254,7 @@ Local: http://localhost:5173/
 ```
 
 #### 2.4 Open in Browser
-Visit `http://localhost:5173/` to start chatting with Jodo.AI
+Visit `http://localhost:5173/` to start chatting with pippo.AI
 
 ---
 
@@ -586,7 +586,7 @@ const BACKEND_URL = 'http://localhost:3001/chat'
 
 **Production** (`vercel-domain.com`):
 ```javascript
-const BACKEND_URL = 'https://jodo-ai.onrender.com/chat'
+const BACKEND_URL = 'https://pippo-ai.onrender.com/chat'
 ```
 
 ---
@@ -607,7 +607,7 @@ const BACKEND_URL = 'https://jodo-ai.onrender.com/chat'
 ### Customizing LLM Behavior
 Edit system prompt in `index.js`:
 ```javascript
-const systemPrompt = `You are Jodo.AI, a helpful assistant...`
+const systemPrompt = `You are pippo.AI, a helpful assistant...`
 ```
 
 ### Changing Search Strategy
